@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/TheAmazingAudioEngine/TheAmazingAudioEngine2.git" }
   s.deprecated   = true
   s.ios.deployment_target = '8.0'
-  s.source_files = 'TheAmazingAudioEngine/**/*.{h,m,c}''
+  s.source_files = 'TheAmazingAudioEngine/**/*.{h,m,c}'
   s.exclude_files = 'TheAmazingAudioEngine/Library/TPCircularBuffer', 'TheAmazingAudioEngine/Utilities/AERealtimeWatchdog*'
   s.frameworks = 'AudioToolbox', 'Accelerate'
   s.requires_arc = true
