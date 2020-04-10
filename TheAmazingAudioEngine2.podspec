@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage     = "http://theamazingaudioengine.com"
   s.license      = 'zlib'
   s.author       = { "Michael Tyson" => "michael@atastypixel.com" }
-  s.source       = { :git => "https://github.com/TheAmazingAudioEngine/TheAmazingAudioEngine2.git" }
+  s.source       = { :git => "https://github.com/amethystdeceiver/TheAmazingAudioEngine2.git" }
   s.deprecated   = true
   s.ios.deployment_target = '8.0'
   s.header_dir   = 'TheAmazingAudioEngine'
