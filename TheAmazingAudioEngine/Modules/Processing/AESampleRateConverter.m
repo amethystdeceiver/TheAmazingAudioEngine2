@@ -1,4 +1,4 @@
-#import "AESampleRateConverterModule.h"
+#import "AESampleRateConverter.h"
 
 @implementation AESampleRateConverterModule
 

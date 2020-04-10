@@ -246,6 +246,10 @@ AudioUnit _Nullable AEAudioUnitOutputGetAudioUnit(__unsafe_unretained AEAudioUni
     return AEIOAudioUnitGetAudioUnit(self->_ioUnit);
 }
 
+AEIOAudioUnit * _Nullable AEAudioUnitOutputGetAEIOAudioUnit(__unsafe_unretained AEAudioUnitOutput *self) {
+    return self->_ioUnit;
+}
+
 #ifdef DEBUG
 static void AEAudioUnitOutputReportRenderTime(__unsafe_unretained AEAudioUnitOutput * self,
                                               AESeconds renderTime,

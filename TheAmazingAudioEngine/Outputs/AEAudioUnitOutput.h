@@ -34,6 +34,7 @@ extern "C" {
 
 @class AERenderer;
 @class AEAudioUnitInputModule;
+@class AEIOAudioUnit;
     
 //! Notification posted when the sample rate changes
 extern NSString * const _Nonnull AEAudioUnitOutputDidChangeSampleRateNotification;
@@ -89,6 +90,16 @@ extern NSString * const _Nonnull AEAudioUnitOutputDidChangeNumberOfOutputChannel
  * @return The audio unit
  */
 AudioUnit _Nullable AEAudioUnitOutputGetAudioUnit(__unsafe_unretained AEAudioUnitOutput * _Nonnull output);
+
+/*!
+* Get access to AEIOAudioUnit
+*
+*  Available for realtime thread usage
+*
+* @param output The output instance
+* @return The AEIOAudioUnit instance
+*/
+AEIOAudioUnit * _Nullable AEAudioUnitOutputGetAEIOAudioUnit(__unsafe_unretained AEAudioUnitOutput * _Nonnull output);
 
 #if TARGET_OS_IPHONE
 
